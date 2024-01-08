@@ -1,0 +1,11 @@
+
+https://www.youtube.com/watch?v=PmbDYtH3Dgw&list=PL145AyWAbMDhwUbBL74s1D2ZV9EqBaQ1t&index=4
+vault server --dev --dev-root-token-id="00000000-0000-0000-0000-000000000000"
+vault kv put secret/booking-microservice @booking-microservice.json
+vault kv put secret/product-microservice @product-microservice.json
+vault kv put secret/stock-microservice @stock-microservice.json
+
+
+
+https://www.youtube.com/watch?v=7gMQYCvTd8c&list=PL145AyWAbMDhwUbBL74s1D2ZV9EqBaQ1t&index=8
+docker run -p 9090:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:23.0.1 start-dev 
